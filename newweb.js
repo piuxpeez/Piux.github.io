@@ -2,12 +2,12 @@ $("#slideshow > div:gt(0)").hide();
 
 setInterval(function() { 
   $('#slideshow > div:first')
-  .fadeOut(3000)
+  .fadeOut(5000)
   .next()
-  .fadeIn(4000)
+  .fadeIn(7000)
   .end()
   .appendTo('#slideshow');
-}, 6000);
+}, 9000);
 
 
 $(document).ready(function(){
