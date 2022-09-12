@@ -4,10 +4,10 @@ setInterval(function() {
   $('#slideshow > div:first')
   .fadeOut(3000)
   .next()
-  .fadeIn(4800)
+  .fadeIn(4000)
   .end()
   .appendTo('#slideshow');
-}, 4000);
+}, 6000);
 
 
 $(document).ready(function(){
