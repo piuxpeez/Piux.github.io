@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link rel="stylesheet" href="slide.css">
+<script src="Jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+</script>
+<script>
+
+$(document).ready(function(){
+$('.nex').click(function(){
+
+
+var currentImage = $('.active');
+var nextImage=currentImage.next();
+
+if (nextImage.length){
+currentImage.removeClass('active').css('z-index',-10);
+//remove the active class from the current image
+
+nextImage.addClass('active').css('z-index', 10);
+//add the active class to the next image on roll
+}
+
+else{ $('#fi').first().addClass('active')};
+
+
+var currentI =$('.i');
+  var nextI=currentI.next();
+  
+  if
+  
+  (nextI.length)
+  
+  {currentI.removeClass('i');
+  $(nextI).addClass('i') }
+  
+  else {// $(currentI).removeClass('i');
+  
+  $('#ij').first().addClass('i')};
+  });
+ 
+
+
+
+$('.prev').click( function(){ 
+var currentImg = $('.active');
+var prevImg = currentImg.prev();
+//previous image
+
+if (prevImg.length){
+ currentImg.removeClass('active')
+$(prevImg).addClass('active');
+ }
+else{ $('.slide-inner').addClass('active')
+};
+
+
+var currentI =$('.i');
+  var prevI=currentI.prev();
+  
+  if(prevI.length)
+  
+  {currentI.removeClass('i');
+  $(prevI).addClass('i') }
+  
+  else {// $(currentI).removeClass('i');
+  
+  $('#ij').first().addClass('i')};
+  });
+ 
+
+});
+
+
+
+
+
+</script>
+
+
+<script>
+
+
+
+
+</script>
+
+
+</head>
+
+<body>
+
+
+
+<div class="container">
+
+<h1> JQslider</h1>
+<div class="Slider-outer">
+
+<img src="left.jpg" class="prev" alt="prev">
+
+<div class="slider-inner">
+<img src="Sports1.jpg" id="fi" class="active">
+<img src="Sports2.jpg" > 
+<img src="Sports3.jpg">
+<img src="Sports4.jpg">
+</div>
+
+
+
+<img src="right.jpg" class="nex" alt="Next">
+</div>
+</div> <center>
+
+
+<div class="sli">
+
+<div id="ij" class="i"></div>
+
+<div>a</div>
+<div> b</div>
+<div> b</div>
+</div>
+</body>
+</html>
+
